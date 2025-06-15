@@ -9,8 +9,8 @@
             --primary: #ffbfae;
             --primary-light: #ffe9e2;
             --primary-dark: #e49e8d;
-            --bg: #fff9f6;
-            --bg-alt: #fff3ea;
+            --bg: #fff6f1;
+            --bg-alt: #fff6f1;
             --text: #2d2320;
             --text-light: #7c6d66;
             --white: #fff;
@@ -44,6 +44,17 @@
             justify-content: center;
             position: relative;
             border-bottom: var(--border);
+        }
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.32);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.13);
+            border-radius: 24px;
+            padding: 3.5rem 3rem 3rem 3rem;
+            backdrop-filter: blur(12px) saturate(170%);
+            -webkit-backdrop-filter: blur(12px) saturate(170%);
+            border: 1.5px solid rgba(255, 191, 174, 0.15);
         }
 
         .hero-content {
@@ -80,8 +91,8 @@
             border: none;
             outline: none;
             cursor: pointer;
-            background: var(--primary);
-            color: var(--text);
+            background: rgba(255,255,255,0.22);
+            color: #e49e8d;
             backdrop-filter: blur(8px) saturate(180%);
             -webkit-backdrop-filter: blur(8px) saturate(180%);
             border: 1.5px solid var(--primary-light);
@@ -89,41 +100,46 @@
         }
 
         .btn-primary {
-            background: linear-gradient(90deg, #ffbfae 0%, #ffd3c2 100%);
-            color: #2d2320;
-            border: none;
+            background: rgba(255,255,255,0.22);
+            color: #e49e8d;
+            border: 1.5px solid #ffd3c2;
             padding: 0.85rem 2.2rem;
-            border-radius: var(--radius);
+            border-radius: 12px;
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
-            box-shadow: var(--shadow);
-            transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+            box-shadow: 0 4px 24px 0 rgba(255,191,174,0.13);
+            transition: background 0.18s, box-shadow 0.18s, color 0.18s, border 0.18s;
             letter-spacing: 0.02em;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         .btn-primary:hover, .btn-primary:focus {
-            background: linear-gradient(90deg, #ffd3c2 0%, #ffbfae 100%);
+            background: rgba(255,191,174,0.19);
             color: #d86b3a;
-            box-shadow: var(--shadow-hover);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.18);
+            border-color: #ffbfae;
         }
 
         .btn-secondary {
-            background: transparent;
+            background: rgba(255,255,255,0.22);
             color: #e49e8d;
-            border: 2px solid #ffd3c2;
+            border: 1.5px solid #ffd3c2;
             padding: 0.85rem 2.2rem;
-            border-radius: var(--radius);
+            border-radius: 12px;
             font-size: 1.1rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
-            box-shadow: none;
-            transition: border 0.2s, color 0.2s, background 0.2s;
+            box-shadow: 0 4px 24px 0 rgba(255,191,174,0.08);
+            transition: background 0.18s, box-shadow 0.18s, color 0.18s, border 0.18s;
             letter-spacing: 0.02em;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         .btn-secondary:hover, .btn-secondary:focus {
-            background: #ffd3c2;
+            background: rgba(255,191,174,0.19);
             color: #fff;
             border-color: #ffbfae;
         }
@@ -134,18 +150,28 @@
             align-items: center;
             justify-content: center;
             padding: 6rem 2rem;
-            background-color: var(--bg-alt);
+            background: var(--bg);
             border-top: var(--border);
+            backdrop-filter: blur(0px);
+            -webkit-backdrop-filter: blur(0px);
+            box-shadow: none;
         }
 
         .content-section:nth-child(even) {
-            background-color: var(--bg);
+            background: var(--bg);
         }
 
         .section-content {
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
+            background: rgba(255,255,255,0.38);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .content-section h2 {
@@ -215,19 +241,21 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .step, .module, .audience-group {
-            background: var(--white);
+            background: rgba(255,255,255,0.38);
             padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .step:hover, .module:hover, .audience-group:hover, .process-step:hover, .module-card:hover, .audience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(110, 214, 198, 0.15);
+            border-radius: 18px;
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .audience-grid {
@@ -235,16 +263,22 @@
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .audience-card {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 2rem;
+            background: rgba(255,255,255,0.38);
+            border-radius: 18px;
+            padding: 2.2rem 2rem;
             text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(198, 226, 233, 0.5);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .audience-icon {
@@ -280,15 +314,22 @@
         .faq-container {
             max-width: 800px;
             margin: 0 auto;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .faq-item {
             margin-bottom: 1rem;
-            border-radius: 8px;
+            border-radius: 18px;
             overflow: hidden;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(198, 226, 233, 0.5);
+            background: rgba(255,255,255,0.38);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .faq-question {
@@ -340,9 +381,12 @@
         .journey-section {
             padding: 6rem 2rem;
             text-align: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+            background: var(--bg);
             border-top: var(--border);
             border-bottom: var(--border);
+            box-shadow: none;
+            backdrop-filter: blur(0px);
+            -webkit-backdrop-filter: blur(0px);
         }
 
         .journey-section h2 {
@@ -365,19 +409,22 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .journey-card {
-            background: var(--white);
-            border-radius: 12px;
+            background: rgba(255,255,255,0.38);
+            border-radius: 18px;
             padding: 2.5rem 2rem;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(198, 226, 233, 0.5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .journey-card:hover {
@@ -450,15 +497,21 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .module-card {
-            background: var(--white);
-            border-radius: 12px;
+            background: rgba(255,255,255,0.38);
+            border-radius: 18px;
             padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(198, 226, 233, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .module-icon {
@@ -506,17 +559,24 @@
             max-width: 800px;
             margin: 0 auto;
             position: relative;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
         }
 
         .process-step {
             display: flex;
             margin-bottom: 3rem;
             position: relative;
-            background: var(--white);
-            border-radius: 12px;
+            background: rgba(255,255,255,0.38);
+            border-radius: 18px;
             padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.10);
+            transition: all 0.3s cubic-bezier(.4,0,.2,1);
+            border: 1.5px solid rgba(255, 191, 174, 0.18);
+            backdrop-filter: blur(10px) saturate(170%);
+            -webkit-backdrop-filter: blur(10px) saturate(170%);
         }
 
         .step-number {
@@ -612,15 +672,17 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(255, 249, 246, 0.98);
-            box-shadow: var(--shadow);
+            background: rgba(255, 249, 246, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(255,191,174,0.19);
             z-index: 1000;
             border-bottom: var(--border);
             transition: background 0.3s;
-            height: 72px;
+            height: 80px;
             display: flex;
             align-items: center;
-            padding: 0 2.5rem;
+            padding: 0 3.5rem;
+            backdrop-filter: blur(18px) saturate(180%);
+            -webkit-backdrop-filter: blur(18px) saturate(180%);
         }
 
         .nav-container {
@@ -634,12 +696,14 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #1a1a1a;
+            font-size: 2.1rem;
+            font-weight: 800;
+            color: var(--primary-dark);
             text-decoration: none;
-            margin-right: 2rem;
+            margin-right: 2.5rem;
+            letter-spacing: 0.04em;
             white-space: nowrap;
+            text-shadow: 0 2px 8px rgba(255,191,174,0.12);
         }
 
         .nav-menu {
@@ -780,14 +844,14 @@
     </section>
 
     <!-- Why Ananteya Exists Section -->
-    <section id="why-ananteya-exists" class="content-section" style="background-color: #f5f9ff;">
+    <section id="why-ananteya-exists" class="content-section">
         <div class="section-content">
             <h2>Why Ananteya Exists?</h2>
             <p class="lead">Most mental health tools soothe symptoms or offer surface motivation. Ananteya dismantles illusions.</p>
             
             <p>We built this because nothing else could hold the complexity of spiritual seekers, high-functioning adults in quiet collapse, or people walking a non-linear path.</p>
             
-            <p class="highlight" style="background: rgba(110, 214, 198, 0.1); border-left-color: #a0e6d9;">
+            <p class="highlight">
                 Ananteya is for those who don't want to be 'fixed'—<br>
                 They want to be reflected, honestly.
             </p>
@@ -795,7 +859,7 @@
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="content-section" style="background-color: #f9f7fe;">
+    <section id="how-it-works" class="content-section">
         <div class="section-content">
             <h2>How It Works?</h2>
             <div class="process-steps">
@@ -832,7 +896,7 @@
     </section>
 
     <!-- Key Modules Section -->
-    <section id="key-modules" class="content-section" style="background-color: #f5f9ff;">
+    <section id="key-modules" class="content-section">
         <div class="section-content">
             <h2>Key Modules</h2>
             <p class="section-intro">Each session is unique but maintains narrative continuity. No prewritten affirmations. No spiritual bypassing. Only clean reflection.</p>
@@ -884,7 +948,7 @@
     </section>
 
     <!-- Who's It For Section -->
-    <section id="whos-it-for" class="content-section" style="background-color: #f9f7fe;">
+    <section id="whos-it-for" class="content-section">
         <div class="section-content">
             <h2>Who's It For?</h2>
             <p class="section-intro">Most platforms sound tech-heavy, like a machine. They give advice, reinforce narrative identity, push emotional modulation.</p>
@@ -965,7 +1029,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="content-section" style="background-color: #f5f9ff;">
+    <section id="faq" class="content-section">
         <div class="section-content">
             <h2>Frequently Asked Questions</h2>
             <p class="section-intro">Read through commonly asked questions to learn more about Ananteya and our approach.</p>
