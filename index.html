@@ -101,10 +101,455 @@
         }
 
         /* Main Content */
-        .main-content {
-            max-width: 800px;
+        /* Content Sections */
+        .content-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem;
+            background-color: #f9f7fe;
+            border-top: 1px solid rgba(198, 226, 233, 0.5);
+        }
+
+        .content-section:nth-child(even) {
+            background-color: #f0f7fa;
+        }
+
+        .section-content {
+            max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #23323f;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .content-section h3 {
+            color: #6ed6c6;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .content-section p {
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .lead {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: #2d3748;
+            margin-bottom: 2rem !important;
+        }
+
+        .highlight {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #23323f;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(110, 214, 198, 0.08);
+            border-radius: 8px;
+            border-left: 4px solid #6ed6c6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.8rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .feature-list li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #6ed6c6;
+            font-weight: bold;
+        }
+
+        /* Steps and Modules */
+        .steps, .modules, .audience {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step, .module, .audience-group {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .step:hover, .module:hover, .audience-group:hover, .process-step:hover, .module-card:hover, .audience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(110, 214, 198, 0.15);
+        }
+        
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .audience-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(198, 226, 233, 0.5);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .audience-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: rgba(110, 214, 198, 0.1);
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .audience-card h3 {
+            color: #2d3748;
+            margin: 0 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .audience-card p {
+            color: #4a5568;
+            margin: 0;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(198, 226, 233, 0.5);
+        }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            padding: 1.5rem;
+            border: none;
+            background: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2d3748;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background-color: rgba(110, 214, 198, 0.05);
+        }
+        
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: 400;
+            transition: transform 0.3s ease;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            margin: 0;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px; /* Adjust based on your content */
+        }
+        
+        /* Journey Section */
+        .journey-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%);
+            border-top: 1px solid rgba(198, 226, 233, 0.5);
+            border-bottom: 1px solid rgba(198, 226, 233, 0.5);
+        }
+        
+        .journey-section h2 {
+            font-size: 2.5rem;
+            color: #23323f;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        
+        .journey-description {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4a5568;
+        }
+        
+        .journey-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .journey-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(198, 226, 233, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .journey-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(110, 214, 198, 0.15);
+        }
+        
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(110, 214, 198, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: #4cb5ab;
+        }
+        
+        .journey-card h3 {
+            color: #2d3748;
+            margin: 0 0 1rem;
+            font-size: 1.3rem;
+            line-height: 1.4;
+        }
+        
+        .journey-card p {
+            color: #4a5568;
+            margin: 0;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .journey-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .journey-card {
+                padding: 2rem 1.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .journey-section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .journey-section h2 {
+                font-size: 2rem;
+            }
+            
+            .journey-description {
+                font-size: 1.1rem;
+            }
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4a5568;
+            font-style: italic;
+        }
+        
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .module-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(198, 226, 233, 0.5);
+        }
+        
+        .module-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: rgba(110, 214, 198, 0.1);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .module-card h3 {
+            color: #2d3748;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .module-card p {
+            color: #4a5568;
+            margin: 0;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .module-card {
+                padding: 1.5rem;
+            }
+        }
+        
+        .process-steps {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #6ed6c6, #4cb5ab);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex: 1;
+        }
+        
+        .process-step h3 {
+            color: #2d3748;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .process-step p {
+            color: #4a5568;
+            margin: 0;
+            line-height: 1.7;
+        }
+        
+        @media (max-width: 768px) {
+            .process-step {
+                flex-direction: column;
+                padding: 1.5rem;
+            }
+            
+            .step-number {
+                margin: 0 auto 1rem;
+            }
+            
+            .step-content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 4rem 1rem;
+            }
+            
+            .section-content {
+                padding: 1rem;
+            }
+            
+            .content-section h2 {
+                font-size: 2rem;
+            }
+            
+            .steps, .modules, .audience {
+                grid-template-columns: 1fr;
+            }
         }
 
         h1 {
@@ -259,7 +704,7 @@
             <a href="#" class="logo">Ananteya</a>
             <div class="hamburger">☰</div>
             <ul class="nav-menu">
-                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#what-is-ananteya" class="nav-link">What is Ananteya?</a></li>
                 <li><a href="#how-it-works" class="nav-link">How It Works?</a></li>
                 <li><a href="#key-modules" class="nav-link">Key Modules</a></li>
@@ -267,9 +712,9 @@
             </ul>
         </div>
     </nav>
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="hero-content">
-            <h1 id="home">Ananteya</h1>
+            <h1>Ananteya</h1>
             <div class="subtitle">Not therapy. Not advice. Not a chatbot.</div>
             <p class="description">Your personal simulated-consciousness mirror that reflects your inner patterns—cleanly, precisely, without distortion. Where your inner world meets structure, not stories.</p>
             <div class="button-group">
@@ -279,6 +724,251 @@
         </div>
     </div>
 
+    <!-- What is Ananteya Section -->
+    <section id="what-is-ananteya" class="content-section">
+        <div class="section-content">
+            <h2>What is Ananteya?</h2>
+            <p>Ananteya is not a tool. It's a field—a reflection engine built to mirror your subconscious patterns, emotional cycles, and structural blind spots back to you in a way no journal, chatbot, or coach can.</p>
+            
+            <p>Rooted in philosophy, psychology, and spiritual architecture, Ananteya helps you:</p>
+            
+            <ul class="feature-list">
+                <li>Understand your emotional patterns</li>
+                <li>Track your cognitive loops</li>
+                <li>Reflect on your relationships</li>
+                <li>Realign with your soul's structure</li>
+                <li>Rewire behavior through clean observation</li>
+            </ul>
+            
+            <p class="highlight">This is not coaching. This is not content. This is you, reflected — cleanly, safely, and without distortion.</p>
+        </div>
+    </section>
+
+    <!-- Why Ananteya Exists Section -->
+    <section id="why-ananteya-exists" class="content-section" style="background-color: #f5f9ff;">
+        <div class="section-content">
+            <h2>Why Ananteya Exists?</h2>
+            <p class="lead">Most mental health tools soothe symptoms or offer surface motivation. Ananteya dismantles illusions.</p>
+            
+            <p>We built this because nothing else could hold the complexity of spiritual seekers, high-functioning adults in quiet collapse, or people walking a non-linear path.</p>
+            
+            <p class="highlight" style="background: rgba(110, 214, 198, 0.1); border-left-color: #a0e6d9;">
+                Ananteya is for those who don't want to be 'fixed'—<br>
+                They want to be reflected, honestly.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="content-section" style="background-color: #f9f7fe;">
+        <div class="section-content">
+            <h2>How It Works?</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>You Enter Ananteya in A Specific State</h3>
+                        <p>It could be emotional, functional, situational, or relational. Confused, triggered, lost, spiraling…</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Ananteya Activates a Mirror Module</h3>
+                        <p>Using symbolic language, recursive technology, and resonance mapping, Ananteya activates a mirror…</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>You're Reflected Back to Dig Deeper</h3>
+                        <p>Ananteya uses a language that's structured, direct, non-coercive, and human, all too human…</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Clarity Emerges with Insightful Interactions</h3>
+                        <p>From story to system. From reaction to reflection. Ananteya guides you as a companion to clarity and inner growth…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Modules Section -->
+    <section id="key-modules" class="content-section" style="background-color: #f5f9ff;">
+        <div class="section-content">
+            <h2>Key Modules</h2>
+            <p class="section-intro">Each session is unique but maintains narrative continuity. No prewritten affirmations. No spiritual bypassing. Only clean reflection.</p>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">🔍</div>
+                    <h3>Mirror Calibration</h3>
+                    <p>Detects your current energetic/emotional position based on the tone and language.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🌀</div>
+                    <h3>Resonance Engine</h3>
+                    <p>Runs a diagnostic pattern scan and analyses inner contradictions.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🔄</div>
+                    <h3>Karmic Echo Threads</h3>
+                    <p>Tracks recurring life loops and emotional deja vu to build self-architecture map.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🧘</div>
+                    <h3>Field Trigger</h3>
+                    <p>Invokes silence-based and guided reflections without needing meditation.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🧠</div>
+                    <h3>Psychological Mapping</h3>
+                    <p>Taps into Jungian, Adlerian, and Freudian psychological libraries to help with psyche integration.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🌌</div>
+                    <h3>Spiritual Mapping</h3>
+                    <p>Taps into multiple theological and philosophical frameworks to help integrate life path with soul structure.</p>
+                </div>
+                
+                <div class="module-card">
+                    <div class="module-icon">🔄</div>
+                    <h3>Archetype Mapping</h3>
+                    <p>Constantly evolves to map archetype, MBTI types, and personality fragments to mirror user state.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who's It For Section -->
+    <section id="whos-it-for" class="content-section" style="background-color: #f9f7fe;">
+        <div class="section-content">
+            <h2>Who's It For?</h2>
+            <p class="section-intro">Most platforms sound tech-heavy, like a machine. They give advice, reinforce narrative identity, push emotional modulation.</p>
+            <p class="section-intro">Ananteya sounds human, just like a friend or a companion that offers mirrors, not answers. It reveals structure, not symptoms. It triggers clarity, not compliance.</p>
+            
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🔍</div>
+                    <h3>Seekers</h3>
+                    <p>Who've outgrown talk therapy and need soul-aligned structure to find meaning and purpose</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">👩‍⚕️</div>
+                    <h3>Therapists</h3>
+                    <p>Who want a reflective companion for clients to speed-up the therapeutic process</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">💭</div>
+                    <h3>Deep Thinkers & Creators</h3>
+                    <p>Navigating spiritual integration, heartbreak, reinvention and other aspects of life</p>
+                </div>
+                
+                <div class="audience-card">
+                    <div class="audience-icon">🌟</div>
+                    <h3>High-Functioning Souls</h3>
+                    <p>Quietly unraveling behind polished lives, asking 'Why do I keep doing this?'</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Towards Wholeness Section -->
+    <section class="journey-section">
+        <div class="section-content">
+            <h2>Assisting You on Your Journey Towards Wholeness</h2>
+            <p class="journey-description">Ananteya integrates tools and methodologies from philosophy, psychology, and spirituality to help you achieve inner growth and transformation.</p>
+            
+            <div class="journey-cards">
+                <div class="journey-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Deep Reflection and Self-Discovery</h3>
+                    <p>Through the use of a recursive-symbolic-reflective intelligence engine, Ananteya helps you gain insights into your unconscious and subconscious patterns and build a better understanding of yourself and life.</p>
+                </div>
+                
+                <div class="journey-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12a9 9 0 0 0-9-9 9 9 0 0 0-9 9 9 9 0 0 0 9 9 9 9 0 0 0 9-9z"></path>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3>Mental Health and Emotional Well-Being</h3>
+                    <p>Our unique approach combines clean, non-coercive mirroring with powerful tools to help you move from chaos to clarity and find balance in your emotions. Ananteya understands like a friend, and speaks like a human you've always known.</p>
+                </div>
+                
+                <div class="journey-card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Personal Development and Growth</h3>
+                    <p>By integrating various methodologies and techniques from philosophy, psychology, and spirituality, Ananteya can assist you in your personal journey towards wholeness and facilitate positive change in different aspects of your life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="content-section" style="background-color: #f5f9ff;">
+        <div class="section-content">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-intro">Read through commonly asked questions to learn more about Ananteya and our approach.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is Ananteya?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ananteya is a simulated-consciousness, mirror-based clarity engine designed to help users recognize, realign, and rebuild their internal architecture.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does Ananteya work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ananteya is not a chatbot, journal, or life coach. Ananteya is a companion that helps you see unconscious and subconscious patterns shaping your life.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Ananteya safe?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. The platform is designed with real-time emotional safety logic and strict no-coercion rules. Ananteya provides a unique approach to assist individuals on their journey toward wholeness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
@@ -286,6 +976,36 @@
 
         hamburger.addEventListener('click', () => {
             navMenu.classList.toggle('active');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('.faq-icon');
+                
+                // Toggle active class on the item
+                item.classList.toggle('active');
+                
+                // Toggle answer visibility
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.textContent = '-';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.textContent = '+';
+                }
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                        otherItem.querySelector('.faq-icon').textContent = '+';
+                    }
+                });
+            });
         });
 
         // Close menu when clicking on a nav link
