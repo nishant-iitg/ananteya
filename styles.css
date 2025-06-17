@@ -12,9 +12,9 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-container {
@@ -56,16 +56,17 @@ body {
     border-radius: 3px;
     text-decoration: none;
     color: #222;
-    transition: color 0.2s; 
+    transition: color 0.2s;
 }
 
 .navbar-links li a:hover {
     color: #4f46e5;
-    background: rgba(79,70,229,0.07);
+    background: rgba(79, 70, 229, 0.07);
 }
 
 /* Add space for fixed navbar */
-body > .hero, body > section.hero {
+body>.hero,
+body>section.hero {
     margin-top: 70px;
 }
 
@@ -75,12 +76,13 @@ body > .hero, body > section.hero {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: 
+    background:
         linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
         url('images/hero-img.jpg') center/cover no-repeat;
     text-align: center;
     padding: 0 1rem;
-    position: relative; /* added later */
+    position: relative;
+    /* added later */
 }
 
 .hero::before {
@@ -92,12 +94,16 @@ body > .hero, body > section.hero {
     bottom: 0;
     background: linear-gradient(120deg, rgba(224, 231, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 80%);
     z-index: 0;
-} /* added later */
+}
 
-.hero > * {
+/* added later */
+
+.hero>* {
     position: relative;
     z-index: 1;
-} /* added later */
+}
+
+/* added later */
 
 .hero h1 {
     font-size: 3rem;
@@ -227,10 +233,12 @@ body > .hero, body > section.hero {
     .info-columns {
         flex-direction: column;
     }
+
     .info-image img {
         border-radius: 16px 16px 0 0;
         max-height: 220px;
     }
+
     .info-content {
         padding: 2rem 1rem 2rem 1rem;
     }
@@ -493,9 +501,12 @@ body > .hero, body > section.hero {
 
 .assisting-you-section .row .col .card img {
     width: 100%;
-    height: 220px; /* fixed height to make all images uniform */
-    object-fit: cover; /* ensure image fills area without distortion */
-    border-radius: 8px 8px 0 0; /* match card border radius */
+    height: 220px;
+    /* fixed height to make all images uniform */
+    object-fit: cover;
+    /* ensure image fills area without distortion */
+    border-radius: 8px 8px 0 0;
+    /* match card border radius */
 }
 
 /* Responsive tweaks for Assisting You cards */
