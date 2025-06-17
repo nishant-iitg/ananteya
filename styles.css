@@ -397,6 +397,101 @@ body > .hero, body > section.hero {
     }
 }
 
+.assisting-you-section {
+    padding: 70px 0 50px 0;
+    background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
+}
+
+.assisting-you-section h2 {
+    text-align: center;
+    color: #4f46e5;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.assisting-you-section .assisting-you-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 1.18rem;
+    max-width: 900px;
+    margin: 0 auto 2.2rem auto;
+    line-height: 1.6;
+}
+
+.assisting-you-section .row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.assisting-you-section .row .col {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.assisting-you-section .row .col .card {
+    --card-spacer-y: 1rem;
+    --card-spacer-x: 1rem;
+    --card-title-spacer-y: 0.5rem;
+    --card-title-color: #4f46e5;
+    --card-subtitle-color: #64748b;
+    --card-border-width: 1px;
+    --card-border-color: #222;
+    --card-border-radius: 8px;
+    --card-box-shadow: none;
+    --card-inner-border-radius: 8px;
+    --card-cap-padding-y: 1rem;
+    --card-cap-padding-x: 1rem;
+    --card-cap-bg: #fff;
+    --card-cap-color: #222;
+    --card-height: auto;
+    --card-color: #222;
+    --card-bg: #fff;
+    --card-img-overlay-padding: 1rem;
+    --card-group-margin: 1rem;
+}
+
+.assisting-you-section .row .col .card .card-body {
+    padding: 1rem;
+}
+
+.assisting-you-section .row .col .card .card-title {
+    color: #4f46e5;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.4px;
+}
+
+.assisting-you-section .row .col .card .card-text {
+    color: #334155;
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+.assisting-you-section .row .col .card img {
+    width: 100%;
+    height: 220px; /* fixed height to make all images uniform */
+    object-fit: cover; /* ensure image fills area without distortion */
+    border-radius: 8px 8px 0 0; /* match card border radius */
+}
+
+/* Responsive tweaks for Assisting You cards */
+@media (max-width: 1000px) {
+    .assisting-you-section .row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .assisting-you-section .row {
+        grid-template-columns: 1fr;
+    }
+}
+
 footer {
     text-align: center;
     padding: 1.5rem 0 1rem 0;
