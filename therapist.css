@@ -324,6 +324,40 @@ body>section.hero {
     margin-left: 1rem;
 }
 
+/* Integrate Section */
+.integrate-section {
+    padding: 70px 0 80px 0;
+    background: linear-gradient(120deg, #f8fafc 0%, #eef2ff 100%);
+    text-align: center;
+}
+
+.integrate-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.integrate-section h2 {
+    color: #4f46e5;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    letter-spacing: 0.8px;
+}
+
+.integrate-lead {
+    color: #64748b;
+    font-size: 1.18rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.6;
+}
+
+.integrate-text {
+    color: #334155;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+
 /* existing footer rule below */
 footer {
     text-align: center;
