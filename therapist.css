@@ -159,6 +159,48 @@ body>section.hero {
     background: #3b30d0;
 }
 
+/* Use Cases Section */
+.use-cases-section {
+    padding: 70px 0 50px 0;
+    background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
+    text-align: center;
+}
+
+.use-cases-section h2 {
+    color: #4f46e5;
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.use-cases-section .subtitle {
+    color: #64748b;
+    font-size: 1.18rem;
+    max-width: 800px;
+    margin: 0 auto 1.8rem auto;
+    line-height: 1.6;
+}
+
+.use-cases-section .description {
+    color: #334155;
+    font-size: 1.08rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.use-cases-section .use-list {
+    list-style: disc inside;
+    color: #334155;
+    font-size: 1.06rem;
+    max-width: 700px;
+    margin: 0 auto 1.8rem auto;
+    text-align: left;
+}
+
+.use-cases-section .use-list li {
+    margin-bottom: 0.4rem;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem 0 1rem 0;
