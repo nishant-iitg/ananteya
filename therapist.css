@@ -358,6 +358,40 @@ body>section.hero {
     margin-bottom: 0.9rem;
 }
 
+/* Control Section */
+.control-section {
+    padding: 70px 0 80px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.control-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.control-section h2 {
+    color: #4f46e5;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    letter-spacing: 0.8px;
+}
+
+.control-list {
+    list-style: disc inside;
+    text-align: left;
+    color: #334155;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.control-list li {
+    margin-bottom: 0.6rem;
+}
+
 /* existing footer rule below */
 footer {
     text-align: center;
