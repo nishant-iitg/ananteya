@@ -324,6 +324,42 @@ body>section.hero {
 }
 
 /* Why Section */
+
+/* Benefit Grid for Why-Therapist */
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+    grid-auto-rows: 1fr; /* make all grid rows equal height */
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #6366F1 0%, #4f46e5 100%);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1.1rem 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 500px) {
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .why-section {
     padding: 70px 0 70px 0;
     background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
@@ -576,11 +612,30 @@ body>section.hero {
     background: #c7d2fe;
 }
 
+/* Footer Styles */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* existing footer rule below */
-footer {
+.site-footer, footer {
     text-align: center;
     padding: 1.5rem 0 1rem 0;
     color: #64748b;
     font-size: 1rem;
-    background: none;
+    background: #f8fafc;
 }

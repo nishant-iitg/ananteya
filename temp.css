@@ -1,0 +1,19 @@
+.minimal-card {
+    border-left: 4px solid #4CAF50;
+    padding: 1rem;
+    background: #f9f9f9;
+    margin-bottom: 1rem;
+  }
+  .card-heading {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  .card-text, .card-list {
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  .card-list {
+    padding-left: 1.5rem;
+  }
+  
