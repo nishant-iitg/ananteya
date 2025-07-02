@@ -612,11 +612,30 @@ body>section.hero {
     background: #c7d2fe;
 }
 
+/* Footer Styles */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* existing footer rule below */
-footer {
+.site-footer, footer {
     text-align: center;
     padding: 1.5rem 0 1rem 0;
     color: #64748b;
     font-size: 1rem;
-    background: none;
+    background: #f8fafc;
 }
