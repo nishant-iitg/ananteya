@@ -170,8 +170,11 @@ body>section.hero {
 }
 
 .use-cases-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -266,8 +269,11 @@ body>section.hero {
 }
 
 .features-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -397,8 +403,11 @@ body>section.hero {
 }
 
 .why-card h3 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
@@ -431,8 +440,11 @@ body>section.hero {
 }
 
 .integrate-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2rem;
     margin-bottom: 1.4rem;
     letter-spacing: 0.8px;
 }
@@ -465,8 +477,11 @@ body>section.hero {
 }
 
 .control-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2rem;
     margin-bottom: 1.4rem;
     letter-spacing: 0.8px;
 }
@@ -567,8 +582,11 @@ body>section.hero {
 }
 
 .request-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2rem;
     margin-bottom: 1.2rem;
 }
 
