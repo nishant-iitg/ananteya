@@ -126,7 +126,10 @@ body>section.hero {
 }
 
 .hero .subtitle {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 1.26;
     color: #64748b;
     margin-bottom: 1.2rem;
     font-weight: 500;
@@ -321,8 +324,11 @@ body>section.hero {
 }
 
 .feature-title {
-    color: #4f46e5;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 1.26;
+    color: #4f46e5;
     margin-bottom: 0.6rem;
     letter-spacing: 0.4px;
 }
