@@ -117,7 +117,10 @@ body>section.hero {
 }
 
 .hero .subtitle {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 1.26;
     color: #64748b;
     margin-bottom: 1.2rem;
     font-weight: 500;
@@ -281,9 +284,11 @@ body>section.hero {
 }
 
 .why-highlight {
-    color: #4f46e5;
-    font-weight: 600;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.15em;
+    line-height: 1.26;
+    color: #4f46e5;
     letter-spacing: 0.5px;
 }
 
@@ -357,8 +362,11 @@ body>section.hero {
 }
 
 .how-cell h3 {
-    color: #4f46e5;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.4rem;
+    line-height: 1.26;
+    color: #4f46e5;
     margin-bottom: 0.6rem;
     letter-spacing: 0.5px;
 }
@@ -416,8 +424,11 @@ body>section.hero {
 }
 
 .key-modules-cell h3 {
-    color: #4f46e5;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 1.26;
+    color: #4f46e5;
     margin-bottom: 0.5rem;
     letter-spacing: 0.4px;
 }
@@ -506,8 +517,11 @@ body>section.hero {
 }
 
 .assisting-you-section .row .col .card .card-title {
-    color: #4f46e5;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
+    line-height: 1.26;
+    color: #4f46e5;
     margin-bottom: 0.5rem;
     letter-spacing: 0.4px;
 }
@@ -581,8 +595,11 @@ body>section.hero {
 }
 
 .faq-section .faq-grid .faq-cell h3 {
-    color: #4f46e5;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.4rem;
+    line-height: 1.26;
+    color: #4f46e5;
     margin-bottom: 0.6rem;
     letter-spacing: 0.5px;
 }
