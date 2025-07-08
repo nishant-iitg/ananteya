@@ -27,8 +27,9 @@ body {
 }
 
 .navbar-logo {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.3rem;
-    font-weight: bold;
     color: #4f46e5;
     letter-spacing: 1px;
     text-decoration: none;
