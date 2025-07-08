@@ -106,7 +106,7 @@ body>section.hero {
 /* added later */
 
 .hero h1 {
-    font-family: 'Expletus Sans', sans-serif;
+    font-family: 'Expletus Sans';
     font-weight: 400;
     font-size: 5.5em;
     line-height: 1.26;
@@ -204,8 +204,11 @@ body>section.hero {
 }
 
 .info-content h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.26;
     color: #4f46e5;
-    font-size: 2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
     text-align: left;
@@ -253,9 +256,12 @@ body>section.hero {
 }
 
 .why-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 2.2rem;
     letter-spacing: 1px;
 }
@@ -316,9 +322,12 @@ body>section.hero {
 }
 
 .how-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -372,9 +381,12 @@ body>section.hero {
 }
 
 .key-modules-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -433,9 +445,12 @@ body>section.hero {
 }
 
 .assisting-you-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -531,9 +546,12 @@ body>section.hero {
 }
 
 .faq-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
@@ -592,9 +610,12 @@ body>section.hero {
 }
 
 .contact-section h2 {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.26;
     text-align: center;
     color: #4f46e5;
-    font-size: 2.2rem;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
 }
