@@ -106,7 +106,10 @@ body>section.hero {
 /* added later */
 
 .hero h1 {
-    font-size: 3rem;
+    font-family: 'Expletus Sans', sans-serif;
+    font-weight: 400;
+    font-size: 5.5em;
+    line-height: 1.26;
     margin-bottom: 0.5rem;
     color: #4f46e5;
     letter-spacing: 2px;
