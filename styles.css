@@ -27,12 +27,15 @@ body {
 }
 
 .navbar-logo {
-    font-family: 'Expletus Sans';
-    font-weight: 400;
-    font-size: 1.3rem;
-    color: #4f46e5;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+/* Logo image sizing */
+.navbar-logo img {
+    height: 160px;
+    width: auto;
 }
 
 .navbar-links {
@@ -102,6 +105,24 @@ body>section.hero {
 .hero>* {
     position: relative;
     z-index: 1;
+}
+
+/* Hero logo overlay */
+.hero-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -160%); /* center horizontally and place above hero heading */
+    width: 120px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none; /* prevent blocking clicks */
+}
+@media (max-width: 600px) {
+    .hero-logo {
+        width: 90px;
+        transform: translate(-50%, -150%);
+    }
 }
 
 /* added later */
