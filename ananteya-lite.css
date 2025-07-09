@@ -35,6 +35,12 @@ body {
     text-decoration: none;
 }
 
+/* Logo image sizing */
+.navbar-logo img {
+    height: 45px;
+    width: auto;
+}
+
 .navbar-links {
     list-style: none;
     display: flex;
