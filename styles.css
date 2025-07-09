@@ -209,6 +209,8 @@ body>section.hero {
     justify-content: center;
     background: linear-gradient(120deg, #e0e7ff 0%, #fff 100%);
     min-width: 0;
+    height: 429.8px;
+    width: 470.4px;
 }
 
 .info-image img {
@@ -352,6 +354,92 @@ body>section.hero {
 /* Uniform margins for What Is Ananteya section */
 
 /* Uniform margins for Why Ananteya Exists section */
+
+/* Uniform margins for How It Works section */
+#how-it-works h2,
+#how-it-works p,
+#how-it-works ul,
+#how-it-works h3,
+#how-it-works li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#what-is-ananteya .info-content {
+padding-top: 0;
+}
+
+#what-is-ananteya .info-image {
+display: flex;
+align-items: flex-start;
+/* justify-content: flex-start; */
+}
+
+#what-is-ananteya .info-image img {
+width: 470.4px;
+height: 538.013px;
+object-fit: contain;
+}
+
+
+/* Specific size for image in Why Ananteya Exists section */
+#why-ananteya-exists .info-image img {
+    width: 470.4px;
+    height: 429.8px;
+    object-fit: cover;
+}
+
+#why-ananteya-exists .info-image {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+}
+
+/* Uniform margins for Key Modules section */
+#key-modules h2,
+#key-modules p,
+#key-modules ul,
+#key-modules h3,
+#key-modules li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+/* Uniform margins for Who's It For section */
+
+/* Uniform margins for Assisting You section */
+
+/* Uniform margins for FAQ section */
+#faq h2,
+#faq h3,
+#faq h4,
+#faq h5,
+#faq p,
+#faq ul,
+#faq li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#assisting-you h2,
+#assisting-you h3,
+#assisting-you h4,
+#assisting-you h5,
+#assisting-you p,
+#assisting-you ul,
+#assisting-you li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+#whos-it-for h2,
+#whos-it-for p,
+#whos-it-for ul,
+#whos-it-for h3,
+#whos-it-for li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
 #why-ananteya-exists h2,
 #why-ananteya-exists p,
 #why-ananteya-exists ul,
