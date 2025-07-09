@@ -190,7 +190,7 @@ body>section.hero {
 .info-columns {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
@@ -215,9 +215,7 @@ body>section.hero {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-height: 340px;
-    min-height: 220px;
-    border-radius: 0 0 0 16px;
+    border-radius: 0 0 0 16px; /* maintain design rounded corner */
 }
 
 .info-content {
@@ -349,6 +347,24 @@ body>section.hero {
 .info-container ul li {
     margin-bottom: 0.4rem;
     padding-left: 0.2rem;
+}
+
+/* Uniform margins for What Is Ananteya section */
+
+/* Uniform margins for Why Ananteya Exists section */
+#why-ananteya-exists h2,
+#why-ananteya-exists p,
+#why-ananteya-exists ul,
+#why-ananteya-exists li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+#what-is-ananteya h2,
+#what-is-ananteya p,
+#what-is-ananteya ul,
+#what-is-ananteya li {
+    margin-block-start: 10px;
+    margin-block-end: 10px;
 }
 
 /* How It Works Section */
