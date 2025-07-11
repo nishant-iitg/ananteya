@@ -110,7 +110,7 @@ body>section.hero {
 /* Hero logo overlay */
 .hero-logo {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -160%); /* center horizontally and place above hero heading */
     width: 120px;
@@ -475,7 +475,7 @@ object-fit: contain;
 .how-subtitle {
     text-align: center;
     color: #64748b;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     max-width: 700px;
     margin: 0 auto 2.2rem auto;
     line-height: 1.6;
@@ -537,7 +537,7 @@ object-fit: contain;
 .key-modules-subtitle {
     text-align: center;
     color: #64748b;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     max-width: 900px;
     margin: 0 auto 2.2rem auto;
     line-height: 1.6;
@@ -604,7 +604,7 @@ object-fit: contain;
 .assisting-you-section .assisting-you-subtitle {
     text-align: center;
     color: #64748b;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     max-width: 900px;
     margin: 0 auto 2.2rem auto;
     line-height: 1.6;
@@ -708,7 +708,7 @@ object-fit: contain;
 .faq-section .faq-subtitle {
     text-align: center;
     color: #64748b;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     max-width: 900px;
     margin: 0 auto 2.2rem auto;
     line-height: 1.6;

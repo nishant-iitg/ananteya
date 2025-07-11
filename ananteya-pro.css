@@ -265,6 +265,8 @@ body>section.hero {
 }
 
 .use-case-text {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.6;
     font-weight: 500;
@@ -369,6 +371,10 @@ body>section.hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.26;
 }
 
 .benefit-card:hover {
@@ -574,6 +580,8 @@ body>section.hero {
 }
 
 .control-text {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
     font-size: 1.05rem;
     line-height: 1.5;
     font-weight: 500;
@@ -620,9 +628,12 @@ body>section.hero {
 
 .primary-btn,
 .secondary-btn {
+    font-family: 'Expletus Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.26;
     border: none;
     padding: 0.9rem 1.8rem;
-    font-size: 1rem;
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.2s, transform 0.2s;
