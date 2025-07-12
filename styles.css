@@ -258,7 +258,7 @@ body>section.hero {
     margin: 0 0 1.2rem 0;
     padding: 0;
     text-align: left;
-    font-size: 1.06rem;
+    font-size: 1.1rem;
 }
 
 .info-content ul li {
@@ -296,7 +296,7 @@ body>section.hero {
 .why-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 2.85rem;
+    font-size: 3rem;
     line-height: 1.26;
     text-align: center;
     color: #4f46e5;
@@ -480,7 +480,7 @@ object-fit: contain;
 .how-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.26;
     text-align: center;
     color: #4f46e5;
@@ -490,11 +490,11 @@ object-fit: contain;
 
 .how-subtitle {
     text-align: center;
-    color: #64748b;
+    color: #334155;
     font-size: 1.08rem;
     max-width: 700px;
     margin: 0 auto 2.2rem auto;
-    line-height: 1.6;
+    line-height: 1.2;
 }
 
 .how-grid {
@@ -542,7 +542,7 @@ object-fit: contain;
 .key-modules-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.26;
     text-align: center;
     color: #4f46e5;
@@ -714,7 +714,7 @@ object-fit: contain;
 .faq-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.26;
     text-align: center;
     color: #4f46e5;
