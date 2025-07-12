@@ -249,7 +249,7 @@ body>section.hero {
 
 .info-content ul {
     list-style: disc inside;
-    color: #64748b;
+    color: #334155;
     margin: 0 0 1.2rem 0;
     padding: 0;
     text-align: left;
@@ -278,7 +278,7 @@ body>section.hero {
 
 .why-section {
     padding: 70px 0 50px 0;
-    background: linear-gradient(120deg, #f8fafc 0%, #fff 100%);
+    background: #f8dcc4;
 }
 
 /* Desktop: mirror image border radius for right-side image in why-section */
@@ -355,9 +355,7 @@ body>section.hero {
 
 /* Uniform margins for Why Ananteya Exists section */
 
-.how-section {
-    background: #fdc89a;
-}
+/* Uniform margins for Why Ananteya Exists section */
 
 /* Uniform margins for How It Works section */
 #how-it-works h2,
@@ -372,6 +370,11 @@ body>section.hero {
 #what-is-ananteya .info-content {
 padding-top: 0;
 }
+
+#what-is-ananteya {
+    background: #fdc89a;
+}
+
 
 #what-is-ananteya .info-image {
 display: flex;
@@ -444,6 +447,10 @@ object-fit: contain;
     margin-block-start: 10px;
     margin-block-end: 10px;
 }
+
+#whos-it-for {
+    background: #fdc89a;
+}
 #why-ananteya-exists h2,
 #why-ananteya-exists p,
 #why-ananteya-exists ul,
@@ -462,7 +469,7 @@ object-fit: contain;
 /* How It Works Section */
 .how-section {
     padding: 70px 0 50px 0;
-    background: linear-gradient(120deg, #f8fafc 0%, #fff 100%);
+    background: #fdc89a;
 }
 
 .how-section h2 {
@@ -524,7 +531,7 @@ object-fit: contain;
 /* Key Modules Section */
 .key-modules-section {
     padding: 70px 0 50px 0;
-    background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
+    background: #f8dcc4;
 }
 
 .key-modules-section h2 {
@@ -591,7 +598,7 @@ object-fit: contain;
 
 .assisting-you-section {
     padding: 70px 0 50px 0;
-    background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
+    background: #f8dcc4;
 }
 
 .assisting-you-section h2 {
@@ -696,7 +703,7 @@ object-fit: contain;
 
 .faq-section {
     padding: 70px 0 50px 0;
-    background: linear-gradient(120deg, #fff 0%, #f8fafc 100%);
+    background: #fdc89a;
 }
 
 .faq-section h2 {
