@@ -355,6 +355,10 @@ body>section.hero {
 
 /* Uniform margins for Why Ananteya Exists section */
 
+.how-section {
+    background: #fdc89a;
+}
+
 /* Uniform margins for How It Works section */
 #how-it-works h2,
 #how-it-works p,
@@ -664,6 +668,7 @@ object-fit: contain;
     color: #334155;
     font-size: 1.02rem;
     line-height: 1.7;
+    text-align: justify;
 }
 
 .assisting-you-section .row .col .card img {
