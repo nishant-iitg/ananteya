@@ -12,7 +12,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.6);
+    background: #f8dcc4;
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
@@ -27,17 +27,18 @@ body {
 }
 
 .navbar-logo {
-    font-family: 'Expletus Sans';
-    font-weight: 400;
-    font-size: 1.3rem;
-    color: #4f46e5;
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Expletus Sans';
+    color: #4f46e5;
 }
 
 /* Logo image sizing */
 .navbar-logo img {
-    height: 45px;
+    height: 50px;
     width: auto;
 }
 
@@ -82,7 +83,7 @@ body>section.hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
     background:
         linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
         url('images/hero-img.jpg') center/cover no-repeat;
