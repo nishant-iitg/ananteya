@@ -397,14 +397,15 @@ object-fit: contain;
 /* Specific size for image in Why Ananteya Exists section */
 #why-ananteya-exists .info-image img {
     width: 470.4px;
-    height: 429.8px;
+    height: 435.85px;
     object-fit: cover;
+    transform: translate(-5%, 10%);
 }
 
 #why-ananteya-exists .info-image {
     display: flex;
     align-items: flex-start;
-    /* justify-content: flex-start; */
+    justify-content: flex-start;
 }
 
 /* Uniform margins for Key Modules section */
