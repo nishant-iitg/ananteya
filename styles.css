@@ -222,7 +222,7 @@ body>section.hero {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 0 0 16px; /* maintain design rounded corner */
+    border-radius: 16px 16px 16px 16px; /* maintain design rounded corner */
 }
 
 .info-content {
@@ -289,7 +289,7 @@ body>section.hero {
 /* Desktop: mirror image border radius for right-side image in why-section */
 @media (min-width: 901px) {
     .why-section .info-image img {
-        border-radius: 0 0 16px 0;
+        border-radius: 16px 16px 16px 16px;
     }
 }
 
