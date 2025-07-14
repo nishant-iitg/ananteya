@@ -483,8 +483,11 @@ body>section.hero {
 .integrate-section {
     padding: 70px 0 80px 0;
     /* background: linear-gradient(120deg, #f8fafc 0%, #eef2ff 100%); */
-    background: #f8dcc4;
+    /* background: #f8dcc4; */
     text-align: center;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        url('images/hero-img.jpg') center/cover no-repeat;
 }
 
 .integrate-container {
