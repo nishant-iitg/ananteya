@@ -202,7 +202,7 @@ body>section.hero {
 .use-cases-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.26;
     color: #4f46e5;
     margin-bottom: 1.2rem;
@@ -213,7 +213,7 @@ body>section.hero {
 
 .use-cases-section .subtitle {
     color: #334155;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     max-width: 800px;
     margin: 0 auto 1.8rem auto;
     line-height: 1.6;
@@ -312,7 +312,7 @@ body>section.hero {
 .features-section h2 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.26;
     color: #4f46e5;
     margin-bottom: 1.2rem;
@@ -376,7 +376,7 @@ body>section.hero {
 
 .feature-text {
     color: #334155;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     line-height: 1.7;
 }
 
@@ -510,7 +510,7 @@ body>section.hero {
 
 .integrate-lead {
     color: #334155;
-    font-size: 1.18rem;
+    font-size: 1.08rem;
     margin-bottom: 1.4rem;
     line-height: 1.6;
     margin-block-start: 10px;
@@ -519,7 +519,7 @@ body>section.hero {
 
 .integrate-text {
     color: #334155;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     line-height: 1.7;
     margin-bottom: 0.9rem;
     margin-block-start: 10px;
@@ -664,7 +664,7 @@ body>section.hero {
 
 .request-description {
     color: #334155;
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     line-height: 1.7;
     margin-bottom: 1.2rem;
     margin-block-start: 10px;
