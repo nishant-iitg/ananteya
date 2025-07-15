@@ -883,3 +883,149 @@ object-fit: contain;
 #faq li {
     line-height: 1.6;
 }
+
+/* === MOBILE FIXES: max-width 600px and below === */
+@media (max-width: 600px) {
+    /* Navbar adjustments */
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .navbar-links li {
+      width: 100%;
+    }
+  
+    .navbar-links li a {
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0;
+    }
+  
+    /* Hero section scaling */
+    .hero h1 {
+      font-size: 2.8rem;
+    }
+  
+    .hero .subtitle {
+      font-size: 1rem;
+    }
+  
+    .hero .description {
+      font-size: 0.95rem;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+  
+    .hero button {
+      width: 100%;
+    }
+  
+    /* Image + Text Columns: Stack vertically */
+    .info-columns {
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  
+    .info-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .info-image img {
+      height: auto;
+      max-height: 300px;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+  
+    .info-content {
+      padding: 1rem;
+    }
+  
+    /* Cards in Assisting You section */
+    .assisting-you-section .row {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  
+    /* FAQ grid stack */
+    .faq-section .faq-grid {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+  
+    /* Reduce large titles */
+    h2 {
+      font-size: 2rem !important;
+      text-align: center !important;
+    }
+  
+    h3 {
+      font-size: 1.2rem !important;
+    }
+  
+    p, li {
+      font-size: 0.95rem;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Hamburger button hidden by default */
+.hamburger {
+    display: none;
+    background: none;
+    font-size: 1.8rem;
+    border: none;
+    cursor: pointer;
+    color: #4f46e5;
+  }
+  
+  /* Show hamburger and stack nav links on mobile */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #f8dcc4;
+      margin-top: 1rem;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+  
+    .navbar-links.show {
+      display: flex;
+    }
+  
+    .navbar-links li {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .navbar-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
