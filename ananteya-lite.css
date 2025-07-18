@@ -739,3 +739,111 @@ body>section.hero {
     font-size: 1rem;
     background: #fdc89a;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Hamburger Button: default show only on mobile and when menu is closed */
+.navbar-toggle {
+    display: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1201;
+}
+
+/* Hamburger lines */
+.navbar-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #4f46e5;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Close Button: default hidden */
+.navbar-close {
+    display: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4f46e5;
+    cursor: pointer;
+    z-index: 1202;
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-close {
+        display: none;
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 80vw;
+        max-width: 320px;
+        height: 100vh;
+        background: #f8dcc4;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+        transition: right 0.3s cubic-bezier(.52, 1.64, .37, .66);
+        z-index: 1200;
+    }
+
+    .navbar-links.open {
+        right: 0;
+    }
+
+    /* Show/hide hamburger & close only as appropriate */
+    .navbar-links.open~#navbar-close {
+        /* Not supported */
+        display: block;
+    }
+}
+
+/* Desktop: always show menu, never show hamburger or close buttons */
+@media (min-width: 901px) {
+
+    .navbar-toggle,
+    .navbar-close {
+        display: none !important;
+    }
+
+    .navbar-links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 2rem;
+    }
+}

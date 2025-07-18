@@ -13,7 +13,14 @@
 	<nav class="navbar">
 		<div class="navbar-container">
 			<a class="navbar-logo" href="index.html">Ananteya</a>
-			<ul class="navbar-links">
+			<button class="navbar-toggle" id="navbar-toggle" aria-label="Open menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<button class="navbar-close" id="navbar-close" aria-label="Close menu">&times;</button>
+
+			<ul class="navbar-links" id="navbar-links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="ananteya-pro.html" target="_blank" rel="noopener">Ananteya Pro</a></li>
 				<li><a href="ananteya-lite.html">Ananteya Lite</a></li>
@@ -262,6 +269,48 @@
 		</div>
 		<p class="copyright">&copy; 2025 Ananteya. All rights reserved.</p>
 	</footer>
+
+
+	<script>
+		const navbarToggle = document.getElementById('navbar-toggle');
+		const navbarLinks = document.getElementById('navbar-links');
+		const navbarClose = document.getElementById('navbar-close');
+
+		function openMenu() {
+			navbarLinks.classList.add('open');
+			navbarToggle.style.display = 'none';
+			navbarClose.style.display = 'block';
+		}
+
+		function closeMenu() {
+			navbarLinks.classList.remove('open');
+			navbarClose.style.display = 'none';
+			navbarToggle.style.display = 'flex';
+		}
+
+		navbarToggle.addEventListener('click', openMenu);
+		navbarClose.addEventListener('click', closeMenu);
+
+		// Hide close on wider screens / reset if resized
+		window.addEventListener('resize', function () {
+			if (window.innerWidth > 900) {
+				navbarLinks.classList.remove('open');
+				navbarClose.style.display = 'none';
+				navbarToggle.style.display = 'none';
+			} else {
+				if (!navbarLinks.classList.contains('open')) {
+					navbarToggle.style.display = 'flex';
+					navbarClose.style.display = 'none';
+				}
+			}
+		});
+
+		// Optional: when clicking a link, close menu
+		navbarLinks.querySelectorAll('a').forEach(link => {
+			link.addEventListener('click', closeMenu);
+		});
+	</script>
+
 </body>
 
 </html>

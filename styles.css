@@ -36,7 +36,7 @@ body {
     color: #4f46e5;
 }
 
-/* Logo image sizing */
+
 .navbar-logo img {
     height: 50px;
     width: auto;
@@ -62,9 +62,6 @@ body {
     transition: color 0.2s;
     padding: 0.5rem 0.5rem;
     border-radius: 3px;
-    text-decoration: none;
-    color: #222;
-    transition: color 0.2s;
 }
 
 .navbar-links li a:hover {
@@ -72,11 +69,13 @@ body {
     background: rgba(79, 70, 229, 0.07);
 }
 
-/* Add space for fixed navbar */
+/* Space for fixed navbar */
 body>.hero,
 body>section.hero {
     margin-top: 70px;
 }
+
+/* --- Hero Section --- */
 
 .hero {
     display: flex;
@@ -105,35 +104,51 @@ body>section.hero {
     z-index: 0;
 }
 
-/* added later */
+
 
 .hero>* {
     position: relative;
     z-index: 1;
 }
 
-/* Hero logo overlay */
-.hero-logo {
+
+/* .hero-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -160%);
-    /* center horizontally and place above hero heading */
     width: 200px;
     height: auto;
     z-index: 2;
     pointer-events: none;
-    /* prevent blocking clicks */
+} */
+
+.hero-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* Adjust as needed for your layout */
+    transform: translateX(-50%);
+    width: 80px;
+    /* Adjust for mobile */
+    height: auto;
+    z-index: 10;
+    /* Ensure it's on top of the text */
+    pointer-events: none;
+    /* (optional) So clicks pass through the logo */
 }
 
-@media (max-width: 600px) {
-    .hero-logo {
-        width: 90px;
-        transform: translate(-50%, -150%);
-    }
-}
 
-/* added later */
+
+
+
+
+
+
+
+
+
+
 
 .hero h1 {
     font-family: 'Expletus Sans';
@@ -226,7 +241,6 @@ body>section.hero {
     height: 100%;
     object-fit: cover;
     border-radius: 16px 16px 16px 16px;
-    /* maintain design rounded corner */
 }
 
 .info-content {
@@ -889,4 +903,281 @@ footer {
 #assisting-you li,
 #faq li {
     line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-logo img {
+        height: 34px;
+        width: auto;
+    }
+
+    /* .navbar-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    } */
+
+    .hero h1 {
+        font-size: 2.3em;
+    }
+
+    .hero .subtitle,
+    .hero .description {
+        font-size: 1em;
+    }
+
+    .hero-logo {
+        width: 80px;
+        transform: translate(-50%, -120%);
+    }
+
+    .hero {
+        min-height: 50vh;
+        height: 250px;
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .info-columns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-image img {
+        max-width: 100%;
+        max-height: 200px;
+        border-radius: 12px 12px 0 0;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .key-modules-grid,
+    .faq-section .faq-grid,
+    .assisting-you-section .row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h2,
+    .how-section h2,
+    .key-modules-section h2,
+    .assisting-you-section h2,
+    .faq-section h2,
+    .contact-section h2 {
+        font-size: 2em;
+        margin-bottom: 0.6em;
+    }
+
+    .info-content,
+    .why-content,
+    .contact-section p,
+    .contact-section .contact-info {
+        font-size: 1em;
+        padding: 1em 0.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    .faq-section .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Responsive containment fix */
+@media (max-width: 600px) {
+
+    .navbar,
+    .navbar-container,
+    .hero,
+    .info-section,
+    .info-columns,
+    .info-image,
+    .info-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* Hamburger Button: default show only on mobile and when menu is closed */
+.navbar-toggle {
+    display: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1201;
+}
+
+/* Hamburger lines */
+.navbar-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #4f46e5;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Close Button: default hidden */
+.navbar-close {
+    display: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #4f46e5;
+    cursor: pointer;
+    z-index: 1202;
+}
+
+/* Responsive behavior for mobile */
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-close {
+        display: none;
+    }
+
+    .navbar-links {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        width: 80vw;
+        max-width: 320px;
+        height: 100vh;
+        background: #f8dcc4;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+        transition: right 0.3s cubic-bezier(.52, 1.64, .37, .66);
+        z-index: 1200;
+    }
+
+    .navbar-links.open {
+        right: 0;
+    }
+
+    /* Show/hide hamburger & close only as appropriate */
+    .navbar-links.open~#navbar-close {
+        /* Not supported */
+        display: block;
+    }
+}
+
+/* Desktop: always show menu, never show hamburger or close buttons */
+@media (min-width: 901px) {
+
+    .navbar-toggle,
+    .navbar-close {
+        display: none !important;
+    }
+
+    .navbar-links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        padding-top: 0 !important;
+    }
+
+    .hero {
+        clear: both;
+        display: block;
+        margin-top: 80px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-logo {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        /* Adjust to sit above the h1 */
+        width: 70px;
+        /* or any size that fits your design */
+        height: auto;
+        transform: translateX(-50%);
+        z-index: 3;
+        /* Make sure it's above h1 and other text */
+    }
+
+    .hero h1 {
+        margin-top: 60px;
+        /* Give space below the logo */
+    }
+}
+
+@media (min-width: 900px) {
+    .hero-logo {
+        width: 200px;
+        top: 50px;
+        /* Adjust 'top' value to visually center above heading */
+    }
+}
+
+.hero h1 {
+    margin-top: 60px;
+    /* Increase if the logo is tall */
+    position: relative;
+    /* Ensures it sits above background layers */
+    z-index: 1;
+    /* Lower than the logo */
 }
