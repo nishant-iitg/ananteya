@@ -847,3 +847,10 @@ body {
         gap: 2rem;
     }
 }
+
+@media (max-width: 900px) {
+    .hero {
+        clear: both;
+        margin-top: 50px !important;
+    }
+}

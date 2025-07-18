@@ -917,13 +917,7 @@ footer {
         width: auto;
     }
 
-    /* .navbar-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    } */
-
-    .hero h1 {
+    /* .hero h1 {
         font-size: 2.3em;
     }
 
@@ -941,7 +935,7 @@ footer {
         min-height: 50vh;
         height: 250px;
         padding: 0 0.5rem;
-    }
+    } */
 }
 
 @media (max-width: 900px) {
@@ -1134,14 +1128,14 @@ img {
 }
 
 @media (max-width: 900px) {
-    body {
+    /* body {
         padding-top: 0 !important;
-    }
+    } */
 
     .hero {
         clear: both;
-        display: block;
-        margin-top: 80px !important;
+        /* display: block; */
+        margin-top: 50px !important;
     }
 }
 
