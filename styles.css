@@ -74,11 +74,11 @@ body {
     background: none;
 }
 
-.navbar-links li a:focus {
+/* .navbar-links li a:focus {
     outline: 2px solid #4f46e5;
     outline-offset: 2px;
     background: rgba(79, 70, 229, 0.08);
-}
+} */
 
 .navbar-links li a:hover {
     color: #4f46e5;
@@ -1031,7 +1031,7 @@ img {
     .key-modules-cell,
     .assisting-you-section .row .col .card,
     .faq-section .faq-grid .faq-cell {
-        padding: 1rem 1rem !important;
+        padding: 1.5rem 1rem !important;
         box-sizing: border-box !important;
     }
 
@@ -1064,6 +1064,9 @@ img {
         margin-top: 2rem !important;
     }
 
+    .navbar-container {
+        padding: 1.3rem 2rem;
+    }
 
     .navbar,
     .navbar-container,
@@ -1077,8 +1080,8 @@ img {
         margin: 0 !important;
         /* padding-left: 0 !important;
         padding-right: 0 !important; */
-        padding-left: auto !important;
-        padding-right: auto !important;
+        /* padding-left: auto !important;
+        padding-right: auto !important; */
     }
 
     img {
