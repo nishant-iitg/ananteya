@@ -596,7 +596,7 @@ body>section.hero {
 .key-modules-cell h3 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
     color: #4f46e5;
     margin-bottom: 0.5rem;
     letter-spacing: 0.4px;
@@ -604,8 +604,11 @@ body>section.hero {
 
 .key-modules-cell p {
     color: #334155;
-    font-size: 1.02rem;
+    font-size: clamp(0.95rem, 4vw, 1.02rem);
     line-height: 1.7;
+    max-width: 36ch;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 @media (max-width: 1000px) {
@@ -688,7 +691,7 @@ body>section.hero {
 .assisting-you-section .row .col .card .card-title {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: clamp(1.05rem, 5vw, 1.3rem);
     line-height: 1.26;
     color: #4f46e5;
     margin-bottom: 0.5rem;
@@ -698,9 +701,12 @@ body>section.hero {
 
 .assisting-you-section .row .col .card .card-text {
     color: #334155;
-    font-size: 1.02rem;
+    font-size: clamp(0.95rem, 4vw, 1.02rem);
     line-height: 1.7;
     text-align: justify;
+    max-width: 36ch;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .assisting-you-section .row .col .card img {
@@ -768,7 +774,7 @@ body>section.hero {
 .faq-section .faq-grid .faq-cell h3 {
     font-family: 'Expletus Sans';
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
     color: #4f46e5;
     margin-bottom: 0.6rem;
     letter-spacing: 0.5px;
@@ -776,8 +782,11 @@ body>section.hero {
 
 .faq-section .faq-grid .faq-cell p {
     color: #334155;
-    font-size: 1.05rem;
+    font-size: clamp(0.96rem, 4vw, 1.05rem);
     line-height: 1.7;
+    max-width: 36ch;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 @media (max-width: 800px) {
@@ -969,7 +978,7 @@ footer {
     .assisting-you-section h2,
     .faq-section h2,
     .contact-section h2 {
-        font-size: 2em;
+        font-size: clamp(1.3rem, 6vw, 2rem);
         margin-bottom: 0.6em;
     }
 
@@ -977,8 +986,11 @@ footer {
     .why-content,
     .contact-section p,
     .contact-section .contact-info {
-        font-size: 1em;
+        font-size: clamp(0.98rem, 4vw, 1.1rem);
         padding: 1em 0.5em;
+        max-width: 36ch;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 }
 
