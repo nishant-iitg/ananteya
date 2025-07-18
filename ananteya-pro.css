@@ -851,6 +851,21 @@ body {
 @media (max-width: 900px) {
     .hero {
         clear: both;
-        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-logo {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        width: 130px;
+        height: 130px;
+        transform: translate(-50%, -20%);
+        z-index: 3;
+    }
+
+    .hero h1 {
+        margin-top: 60px;
     }
 }

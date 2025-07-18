@@ -1118,8 +1118,7 @@ img {
 
     .hero {
         clear: both;
-        /* display: block; */
-        margin-top: 50px !important;
+        margin-top: 60px !important;
     }
 }
 
