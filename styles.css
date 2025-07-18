@@ -704,9 +704,6 @@ body>section.hero {
     font-size: clamp(0.95rem, 4vw, 1.02rem);
     line-height: 1.7;
     text-align: justify;
-    max-width: 36ch;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .assisting-you-section .row .col .card img {
@@ -784,9 +781,6 @@ body>section.hero {
     color: #334155;
     font-size: clamp(0.96rem, 4vw, 1.05rem);
     line-height: 1.7;
-    max-width: 36ch;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 @media (max-width: 800px) {
