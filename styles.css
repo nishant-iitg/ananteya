@@ -77,7 +77,7 @@ body {
 .navbar-links li a:focus {
     outline: 2px solid #4f46e5;
     outline-offset: 2px;
-    background: rgba(79,70,229,0.08);
+    background: rgba(79, 70, 229, 0.08);
 }
 
 .navbar-links li a:hover {
@@ -604,11 +604,8 @@ body>section.hero {
 
 .key-modules-cell p {
     color: #334155;
-    font-size: clamp(0.95rem, 4vw, 1.02rem);
+    font-size: clamp(1.05rem, 4vw, 1.02rem);
     line-height: 1.7;
-    max-width: 36ch;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 @media (max-width: 1000px) {
@@ -923,22 +920,6 @@ footer {
     .hero h1 {
         font-size: 4rem;
     }
-
-    /* .hero .subtitle,
-    .hero .description {
-        font-size: 1em;
-    }
-
-    .hero-logo {
-        width: 80px;
-        transform: translate(-50%, -120%);
-    }
-
-    .hero {
-        min-height: 50vh;
-        height: 250px;
-        padding: 0 0.5rem;
-    } */
 }
 
 @media (max-width: 900px) {
@@ -967,12 +948,13 @@ footer {
 @media (max-width: 600px) {
 
     h2,
+    .info-content h2,
     .how-section h2,
     .key-modules-section h2,
     .assisting-you-section h2,
     .faq-section h2,
     .contact-section h2 {
-        font-size: clamp(1.3rem, 6vw, 2rem);
+        font-size: clamp(2rem, 6vw, 2rem);
         margin-bottom: 0.6em;
     }
 
@@ -982,9 +964,6 @@ footer {
     .contact-section .contact-info {
         font-size: clamp(0.98rem, 4vw, 1.1rem);
         padding: 1em 0.5em;
-        max-width: 36ch;
-        /* margin-left: auto;
-        margin-right: auto; */
     }
 }
 
@@ -1013,6 +992,7 @@ img {
 
 /* Responsive containment fix */
 @media (max-width: 600px) {
+
     /* --- MOBILE LAYOUT & SPACING IMPROVEMENTS --- */
     /* Prevent horizontal scrolling */
     body,
@@ -1033,7 +1013,6 @@ img {
     .contact-section {
         max-width: 100vw !important;
         box-sizing: border-box !important;
-        /* overflow-x: hidden !important; */
     }
 
     /* Consistent vertical spacing for sections */
@@ -1052,7 +1031,7 @@ img {
     .key-modules-cell,
     .assisting-you-section .row .col .card,
     .faq-section .faq-grid .faq-cell {
-        padding: 1.5rem 1rem !important;
+        padding: 1rem 1rem !important;
         box-sizing: border-box !important;
     }
 
@@ -1096,8 +1075,10 @@ img {
         width: 100%;
         max-width: 100%;
         margin: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        /* padding-left: 0 !important;
+        padding-right: 0 !important; */
+        padding-left: auto !important;
+        padding-right: auto !important;
     }
 
     img {
@@ -1171,10 +1152,11 @@ img {
         cursor: pointer;
         transition: background 0.2s;
     }
+
     .navbar-close:focus {
         outline: 2px solid #4f46e5;
         outline-offset: 2px;
-        background: rgba(79,70,229,0.08);
+        background: rgba(79, 70, 229, 0.08);
     }
 
     .navbar-links {
@@ -1261,4 +1243,10 @@ img {
     margin-top: 60px;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .how-cell {
+        padding: 1rem 1rem !important;
+    }
 }
