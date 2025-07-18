@@ -1130,9 +1130,9 @@ img {
         left: 50%;
         top: 30px;
         /* Adjust to sit above the h1 */
-        width: 70px;
+        width: 130px;
         /* or any size that fits your design */
-        height: auto;
+        height: 130px;
         transform: translateX(-50%);
         z-index: 3;
         /* Make sure it's above h1 and other text */
@@ -1141,14 +1141,6 @@ img {
     .hero h1 {
         margin-top: 60px;
         /* Give space below the logo */
-    }
-}
-
-@media (min-width: 900px) {
-    .hero-logo {
-        width: 200px;
-        top: 50px;
-        /* Adjust 'top' value to visually center above heading */
     }
 }
 
