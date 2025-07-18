@@ -926,11 +926,11 @@ footer {
         width: auto;
     }
 
-    /* .hero h1 {
-        font-size: 2.3em;
+    .hero h1 {
+        font-size: 4rem;
     }
 
-    .hero .subtitle,
+    /* .hero .subtitle,
     .hero .description {
         font-size: 1em;
     }
