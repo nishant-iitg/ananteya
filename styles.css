@@ -127,28 +127,13 @@ body>section.hero {
     position: absolute;
     left: 50%;
     top: 50%;
-    /* Adjust as needed for your layout */
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, -20%);
     width: 80px;
-    /* Adjust for mobile */
     height: auto;
     z-index: 10;
-    /* Ensure it's on top of the text */
     pointer-events: none;
-    /* (optional) So clicks pass through the logo */
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .hero h1 {
     font-family: 'Expletus Sans';
