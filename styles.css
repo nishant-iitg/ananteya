@@ -1007,6 +1007,78 @@ img {
 
 /* Responsive containment fix */
 @media (max-width: 600px) {
+    /* --- MOBILE LAYOUT & SPACING IMPROVEMENTS --- */
+    /* Prevent horizontal scrolling */
+    body,
+    .navbar,
+    .navbar-container,
+    .hero,
+    .info-section,
+    .info-columns,
+    .info-image,
+    .info-content,
+    .why-section,
+    .key-modules-section,
+    .key-modules-grid,
+    .assisting-you-section,
+    .assisting-you-section .row,
+    .faq-section,
+    .faq-section .faq-grid,
+    .contact-section {
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Consistent vertical spacing for sections */
+    .hero,
+    .info-section,
+    .why-section,
+    .key-modules-section,
+    .assisting-you-section,
+    .faq-section,
+    .contact-section {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    /* Card/feature padding for better readability */
+    .key-modules-cell,
+    .assisting-you-section .row .col .card,
+    .faq-section .faq-grid .faq-cell {
+        padding: 1.5rem 1rem !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Card body padding */
+    .assisting-you-section .row .col .card .card-body {
+        padding: 1rem 0.5rem !important;
+    }
+
+    /* Prevent horizontal scroll for images */
+    img {
+        max-width: 100vw !important;
+        height: auto;
+        display: block;
+    }
+
+    /* Section subtitles and info spacing */
+    .key-modules-subtitle,
+    .assisting-you-section .assisting-you-subtitle,
+    .faq-section .faq-subtitle,
+    .contact-section .contact-subtitle {
+        margin-bottom: 1.5rem !important;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* Ensure FAQ and info content has enough vertical space */
+    .faq-section .faq-grid,
+    .info-content {
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+    }
+
 
     .navbar,
     .navbar-container,

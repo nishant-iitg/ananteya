@@ -800,6 +800,80 @@ body {
 }
 
 /* Responsive behavior for mobile */
+
+@media (max-width: 600px) {
+    /* --- MOBILE LAYOUT & SPACING IMPROVEMENTS --- */
+    /* Prevent horizontal scrolling */
+    body,
+    .navbar,
+    .navbar-container,
+    .hero,
+    .features-section,
+    .features-grid,
+    .feature-card,
+    .why-section,
+    .why-grid,
+    .why-card,
+    .use-cases-section,
+    .use-cases-grid,
+    .use-case-card,
+    .benefit-grid,
+    .benefit-card,
+    .control-grid,
+    .control-card {
+        max-width: 100vw !important;
+        box-sizing: border-box !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Consistent vertical spacing for sections */
+    .hero,
+    .features-section,
+    .why-section,
+    .use-cases-section,
+    .control-section {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+
+    /* Card/feature padding for better readability */
+    .feature-card,
+    .why-card,
+    .use-case-card,
+    .benefit-card,
+    .control-card {
+        padding: 1.5rem 1rem !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Prevent horizontal scroll for images */
+    img {
+        max-width: 100vw !important;
+        height: auto;
+        display: block;
+    }
+
+    /* Section subtitles and info spacing */
+    .features-section .subtitle,
+    .why-section .subtitle,
+    .use-cases-section .subtitle,
+    .control-section .subtitle {
+        margin-bottom: 1.5rem !important;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* Ensure grids and cards have enough vertical space */
+    .features-grid,
+    .why-grid,
+    .use-cases-grid,
+    .benefit-grid,
+    .control-grid {
+        margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+    }
+}
+
 @media (max-width: 900px) {
     .navbar-toggle {
         display: flex;
