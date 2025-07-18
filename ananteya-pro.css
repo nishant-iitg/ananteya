@@ -858,7 +858,7 @@ body {
     .hero-logo {
         position: absolute;
         left: 50%;
-        top: 30px;
+        top: 35px;
         width: 130px;
         height: 130px;
         transform: translate(-50%, -20%);
