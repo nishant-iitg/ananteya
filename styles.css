@@ -940,7 +940,7 @@ footer {
         border-radius: 12px 12px 12px 12px !important;
     }
 
-    #what-is-ananteya > div > div.info-image > img {
+    .what-is-ananteya .info-columns .info-image img {
         border-radius: 12px 12px 12px 12px !important;
     }
 }
