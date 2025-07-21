@@ -929,9 +929,19 @@ footer {
     }
 
     .info-image img {
-        max-width: 100%;
-        max-height: 200px;
-        border-radius: 12px 12px 0 0;
+        max-width: 200px !important;
+        max-height: 200px !important;
+        align-items: center !important;
+        /* border-radius: 12px 12px 12px 12px !important; */
+    }
+
+    #why-ananteya-exists > div > div.info-image > img {
+        transform: translate(45%, 0%) !important;
+        border-radius: 12px 12px 12px 12px !important;
+    }
+
+    #what-is-ananteya > div > div.info-image > img {
+        border-radius: 12px 12px 12px 12px !important;
     }
 }
 
@@ -1031,13 +1041,13 @@ img {
     .key-modules-cell,
     .assisting-you-section .row .col .card,
     .faq-section .faq-grid .faq-cell {
-        padding: 1.5rem 1rem !important;
+        padding: 0rem 1rem !important;
         box-sizing: border-box !important;
     }
 
     /* Card body padding */
     .assisting-you-section .row .col .card .card-body {
-        padding: 1rem 0.5rem !important;
+        padding: 0rem 0rem !important;
     }
 
     /* Prevent horizontal scroll for images */
@@ -1048,14 +1058,11 @@ img {
     }
 
     /* Section subtitles and info spacing */
-    .key-modules-subtitle,
-    .assisting-you-section .assisting-you-subtitle,
-    .faq-section .faq-subtitle,
-    .contact-section .contact-subtitle {
-        margin-bottom: 1.5rem !important;
+    /* .assisting-you-section,
+    .faq-section {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-    }
+    } */
 
     /* Ensure FAQ and info content has enough vertical space */
     .faq-section .faq-grid,
@@ -1248,8 +1255,67 @@ img {
     z-index: 1;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .how-cell {
-        padding: 1rem 1rem !important;
+        padding: 0rem 1rem !important;
     }
+
+    .how-section p {
+        font-size: clamp(1.08rem, 4vw, 1.05rem);
+    }
+
+    .how-subtitle {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .key-modules-subtitle {
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-block-end: 10px !important;
+        padding: 0rem 0rem !important;
+    }
+
+    .key-modules-cell {
+        padding: 0rem 1rem !important;
+    }
+
+    .key-modules-cell h3 {
+        font-size: clamp(1.4rem, 5vw, 1.4rem);
+    }
+
+    .key-modules-cell p {
+        font-size: clamp(1.08rem, 4vw, 1.02rem);
+    }
+
+    .assisting-you-subtitle {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        margin-block-end: 10px !important;
+        padding: 0rem 0rem !important;
+    }
+
+    .card-title {
+        font-size: clamp(1.4rem, 5vw, 1.4rem) !important;
+    }
+
+    .card-text {
+        font-size: clamp(1.08rem, 4vw, 1.02rem) !important;
+    }
+
+    .faq-cell h3 {
+        font-size: clamp(1.4rem, 5vw, 1.4rem) !important;
+    }
+
+    .faq-cell p {
+        font-size: clamp(1.08rem, 4vw, 1.02rem) !important;
+    }
+
+    .faq-subtitle {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        margin-block-end: 10px !important;
+        padding: 0rem 0rem !important;
+    }
+
 }
