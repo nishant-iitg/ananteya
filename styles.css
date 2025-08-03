@@ -1232,9 +1232,9 @@ img {
 
 @media (max-width: 900px) {
     .hero-logo {
-        position: fixed;
+        position: absolute;
         left: 50%;
-        top: 60px;
+        top: 0px;
         width: 180px;
         height: 180px;
         transform: translateX(-50%);
