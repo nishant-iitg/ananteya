@@ -1240,7 +1240,7 @@ img {
         /* or any size that fits your design */
         height: 165px;
         transform: translateX(-50%);
-        z-index: 3;
+        z-index: 4;
         /* Make sure it's above h1 and other text */
     }
 
