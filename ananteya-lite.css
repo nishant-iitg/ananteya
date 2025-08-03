@@ -1043,11 +1043,11 @@ body {
 
 @media (max-width: 900px) {
     .hero-logo {
-        position: absolute;
+        position: fixed;
         left: 50%;
-        top: 25px;
-        width: 165px;
-        height: 165px;
+        top: 92px;
+        width: 175px;
+        height: 175px;
         transform: translate(-50%, -20%);
         z-index: 3;
     }

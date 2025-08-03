@@ -1232,13 +1232,11 @@ img {
 
 @media (max-width: 900px) {
     .hero-logo {
-        position: absolute;
+        position: fixed;
         left: 50%;
-        top: 10px;
-        /* Adjust to sit above the h1 */
-        width: 165px;
-        /* or any size that fits your design */
-        height: 165px;
+        top: 60px;
+        width: 180px;
+        height: 180px;
         transform: translateX(-50%);
         z-index: 4;
         /* Make sure it's above h1 and other text */
