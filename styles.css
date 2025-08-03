@@ -1234,11 +1234,11 @@ img {
     .hero-logo {
         position: absolute;
         left: 50%;
-        top: 30px;
+        top: 10px;
         /* Adjust to sit above the h1 */
-        width: 130px;
+        width: 165px;
         /* or any size that fits your design */
-        height: 130px;
+        height: 165px;
         transform: translateX(-50%);
         z-index: 3;
         /* Make sure it's above h1 and other text */

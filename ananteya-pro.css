@@ -1045,9 +1045,9 @@ body {
     .hero-logo {
         position: absolute;
         left: 50%;
-        top: 35px;
-        width: 130px;
-        height: 130px;
+        top: 25px;
+        width: 165px;
+        height: 165px;
         transform: translate(-50%, -20%);
         z-index: 3;
     }
